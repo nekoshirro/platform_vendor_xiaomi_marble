@@ -1759,7 +1759,6 @@ PRODUCT_PACKAGES += \
     IWlanService \
     SoterService \
     TimeService \
-    com.qualcomm.qti.gpudrivers.taro.api31 \
     uimgbaservice \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
