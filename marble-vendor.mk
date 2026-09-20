@@ -664,6 +664,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/thermal-yuanshen.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-yuanshen.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_0.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_1.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_2.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_3.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_4.bin \
@@ -671,6 +672,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/xiaomi_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/xiaomi_ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list_preference.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_0.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_1.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_2.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_3.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_4.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_5.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_5.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_6.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_6.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_7.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_7.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_8.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_8.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/primitive_effect_9.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_9.bin \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
