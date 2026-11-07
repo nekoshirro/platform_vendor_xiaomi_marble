@@ -1188,6 +1188,7 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    liblistensoundmodelaidl \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
@@ -1479,7 +1480,6 @@ PRODUCT_PACKAGES += \
     se_nq_extn_client \
     sensors.ssc \
     sensors.touch.detect \
-    libasphere \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -1508,6 +1508,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V3-ndk \
     vendor.qti.gnss-V5-ndk \
     vendor.qti.gnss-service \
+    vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
