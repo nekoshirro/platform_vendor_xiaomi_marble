@@ -8862,7 +8862,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libhidlbase",
                 "libutils",
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
+                "vendor.qti.hardware.wifidisplaysession@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -21225,6 +21225,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwfdaac_vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdaac_vendor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libminijail",
+                "libavservices_minijail",
+                "vendor.display.config@2.0",
+                "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwfdcodecv4l2_proprietary",
     owner: "xiaomi",
     strip: {
@@ -21333,8 +21362,8 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "vendor.display.config@2.0",
-                "libdisplayconfig.qti",
+                "libbinder_ndk",
+                "vendor.qti.hardware.display.config-V5-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21365,37 +21394,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libwfdutils_proprietary",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdhdcpservice_proprietary",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwfdhdcpservice_proprietary.so",
-            ],
-            shared_libs: [
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libwfdhdcpcp",
-                "libc++",
-                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -21475,6 +21473,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libwfdmmsrc_proprietary.so",
             ],
             shared_libs: [
+                "qti-audio-types-aidl-V1-ndk",
                 "libbinder",
                 "libmmosal_vendor",
                 "liblog",
@@ -21492,12 +21491,19 @@ cc_prebuilt_library_shared {
                 "libwfdcodecv4l2_proprietary",
                 "libwfdmmservice_proprietary",
                 "libhidlbase",
+                "android.hardware.common.fmq-V1-ndk",
+                "libbinder_ndk",
+                "libbase",
+                "libfmq",
+                "libhardware",
+                "libmedia_helper",
+                "android.hardware.audio.core-V2-ndk",
+                "android.media.audio.common.types-V3-ndk",
                 "qti.video.utils.videobufferlayout",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio.common@7.0",
                 "android.hardware.audio.common@7.0-enums",
-                "libfmq",
                 "libc++",
                 "libc",
                 "libm",
@@ -21586,8 +21592,10 @@ cc_prebuilt_library_shared {
                 "libmmosal_vendor",
                 "liblog",
                 "libutils",
+                "libcutils",
                 "libwfdsourcesession_proprietary",
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
+                "libbinder_ndk",
                 "libwfdcommonutils_proprietary",
                 "libhidlbase",
                 "libc++",
@@ -25823,8 +25831,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
-    stem: "vendor.qti.hardware.wifidisplaysession@1.0",
+    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -25832,13 +25840,11 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so",
+                "proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -25866,9 +25872,11 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libutils",
                 "libcutils",
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
+                "libbinder_ndk",
                 "libwfdsessionmodule",
                 "liblog",
+                "libwfdcommonutils_proprietary",
                 "libc++",
                 "libc",
                 "libm",
@@ -32389,77 +32397,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "wfdhdcphalservice",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wfdhdcphalservice",
-            ],
-            shared_libs: [
-                "android.hardware.drm@1.0",
-                "android.hardware.drm@1.1",
-                "android.hardware.drm@1.2",
-                "android.hardware.drm@1.3",
-                "android.hidl.memory@1.0",
-                "libhidlmemory",
-                "libc++",
-                "libhidlbase",
-                "libbinder",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfdhdcpcp",
-                "libwfdhdcpservice_proprietary",
-                "libwfdcommonutils_proprietary",
-                "libwfdutils_proprietary",
-                "libavservices_minijail",
-                "libwfddisplayconfig_vendor",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wfdvndservice",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wfdvndservice",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libwfdhdcpservice_proprietary",
-                "libavservices_minijail",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "wifidisplayhalservice",
     owner: "xiaomi",
     target: {
@@ -32468,9 +32405,9 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/wifidisplayhalservice",
             ],
             shared_libs: [
-                "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
                 "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl",
-                "libhidlbase",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
+                "libbinder_ndk",
                 "libutils",
                 "liblog",
                 "libbinder",
