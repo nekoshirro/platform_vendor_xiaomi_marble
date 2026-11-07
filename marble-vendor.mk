@@ -770,9 +770,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
-    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
-    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_gc02m1_macro_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_gc02m1_macro_i.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_imx355_ultra_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_imx355_ultra_i.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_ov64b40_wide_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_ov64b40_wide_i.bin \
@@ -1047,6 +1044,7 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libMiMotion \
     libOpenCL \
+    libOpenCL_adreno \
     libQ6MSFR_manager_stub \
     libQSEEComAPI \
     libQTEEConnector_listener \
@@ -1060,6 +1058,7 @@ PRODUCT_PACKAGES += \
     libXMFaceFocus \
     libadm \
     libadreno_app_profiles \
+    libadreno_compiler_cl \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
