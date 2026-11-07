@@ -18782,6 +18782,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqspm-mem-utils-vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqspm-mem-utils-vendor.so",
+            ],
+            shared_libs: [
+                "vendor.qti.qspmhal-V1-ndk",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqti-perfd-client",
     owner: "xiaomi",
     strip: {
@@ -26631,7 +26658,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal@1.0-impl",
+    name: "vendor.qti.qspmhal-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26639,17 +26666,11 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so",
+                "proprietary/vendor/lib64/vendor.qti.qspmhal-V1-ndk.so",
             ],
             shared_libs: [
-                "libutils",
-                "vendor.qti.qspmhal@1.0",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libcutils",
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -26663,7 +26684,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal@1.0",
+    name: "vendor.qti.qspmhal-impl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26671,13 +26692,17 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
+                "proprietary/vendor/lib64/vendor.qti.qspmhal-impl.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
                 "libutils",
+                "vendor.qti.qspmhal-V1-ndk",
+                "libqspm-mem-utils-vendor",
+                "liblog",
                 "libcutils",
+                "libbinder",
+                "libbase",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -29806,6 +29831,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.qti.qspmhal-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.xiaomi.hardware.quickcamera@1.0-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml",
@@ -32289,20 +32323,21 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.qspmhal@1.0-service",
+    name: "vendor.qti.qspmhal-service",
     owner: "xiaomi",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service",
+                "proprietary/vendor/bin/vendor.qti.qspmhal-service",
             ],
             shared_libs: [
-                "vendor.qti.qspmhal@1.0",
-                "vendor.qti.qspmhal@1.0-impl",
-                "libhidlbase",
+                "vendor.qti.qspmhal-V1-ndk",
+                "vendor.qti.qspmhal-impl",
                 "liblog",
                 "libutils",
                 "libavservices_minijail",
+                "libbase",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
