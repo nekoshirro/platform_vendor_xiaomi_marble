@@ -1213,7 +1213,6 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmdmdetect \
     libmdmimgload \
-    libmdsprpc \
     libmemutils \
     libmfGhostDetection \
     libmi_supernight_raw_checker \
