@@ -1064,6 +1064,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_super_night_raw \
     libarcsoft_zoom_high_dynamic_range \
     libaudio_log_utils \
+    libbacklight-calib \
     libbeauty_face_interface \
     libbitmlengine \
     libbitmlenginev2 \
