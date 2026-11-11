@@ -9214,6 +9214,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libSNPE.so",
             ],
             shared_libs: [
+                "libsnpe_cxxabi_shim",
                 "libdl",
                 "liblog",
                 "libc++_shared",
