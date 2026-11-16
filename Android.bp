@@ -30732,6 +30732,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/netmgrd",
             ],
             shared_libs: [
+                "libnetmgrportutils_shim",
                 "libdsutils",
                 "libconfigdb",
                 "libdiag",
