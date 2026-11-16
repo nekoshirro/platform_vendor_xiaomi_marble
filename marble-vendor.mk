@@ -459,21 +459,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU830.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU830.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU860.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU860.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946370515662721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946370515662721.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946480857061761.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061761.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946370515662722.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946370515662722.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946480857061762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061762.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/xiaomi/marble/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
@@ -481,7 +473,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
@@ -514,17 +505,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
-    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
-    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.dsp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
@@ -532,7 +524,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
-    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
@@ -540,7 +532,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
-    vendor/xiaomi/marble/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_performance_ukee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_ukee.xml \
@@ -595,8 +586,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
-    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/lightSensorConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lightSensorConfig.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
@@ -779,9 +768,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
-    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
-    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_gc02m1_macro_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_gc02m1_macro_i.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_imx355_ultra_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_imx355_ultra_i.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_ov64b40_wide_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_ov64b40_wide_i.bin \
@@ -930,22 +916,8 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.supermoon \
     com.xiaomi.plugin.swjpegencode \
     com.xiaomi.plugin.tsskinbeautifier \
-    camx.device@3.2-impl \
-    camx.device@3.3-impl \
-    camx.device@3.4-ext-impl \
-    camx.device@3.4-impl \
-    camx.device@3.5-ext-impl \
-    camx.device@3.5-impl \
-    camx.device@3.6-ext-impl \
-    camx.device@3.6-impl \
-    camx.device@3.7-impl \
-    camx.provider@2.4-external \
-    camx.provider@2.4-impl \
-    camx.provider@2.4-legacy \
-    camx.provider@2.5-external \
-    camx.provider@2.5-legacy \
-    camx.provider@2.6-legacy \
-    camx.provider@2.7-legacy \
+    camx.device-impl \
+    camx.provider-impl \
     com.qti.chiusecaseselector \
     com.qti.feature2.anchorsync \
     com.qti.feature2.demux \
@@ -1056,6 +1028,7 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libMiMotion \
     libOpenCL \
+    libOpenCL_adreno \
     libQ6MSFR_manager_stub \
     libQSEEComAPI \
     libQTEEConnector_listener \
@@ -1069,6 +1042,7 @@ PRODUCT_PACKAGES += \
     libXMFaceFocus \
     libadm \
     libadreno_app_profiles \
+    libadreno_compiler_cl \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
@@ -1131,6 +1105,7 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libcolor-default \
     libcom.qti.chinodeutils \
     libcom.xiaomi.debug \
     libcom.xiaomi.grallocutils \
@@ -1171,11 +1146,12 @@ PRODUCT_PACKAGES += \
     libgrpc++_unsecure_prebuilt \
     libgsl \
     libhdr10plus \
-    libhdr_backlight_adapter \
+    libhdr_stub \
     libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
     libidl \
+    libintervmipc \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
@@ -1189,6 +1165,8 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    liblistensoundmodel2vendor \
+    liblistensoundmodelaidl \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
@@ -1213,7 +1191,6 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmdmdetect \
     libmdmimgload \
-    libmdsprpc \
     libmemutils \
     libmfGhostDetection \
     libmi_supernight_raw_checker \
@@ -1296,7 +1273,6 @@ PRODUCT_PACKAGES += \
     libqc2audio_utils \
     libqc2colorconvertfilter \
     libqc2filter \
-    libqc2vppfilter \
     libqcbor \
     libqcc_file_agent \
     libqcci_legacy \
@@ -1351,6 +1327,7 @@ PRODUCT_PACKAGES += \
     libqseed3 \
     libqshcamera \
     libqsocket \
+    libqspm-mem-utils-vendor \
     libqti-perfd-client \
     libqti-perfd \
     libqti-util \
@@ -1385,7 +1362,6 @@ PRODUCT_PACKAGES += \
     libsensorslog \
     libsfeShiftExtrapolation \
     libshsc \
-    libshsusr_verinfo \
     libsn100u_fw \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
@@ -1429,17 +1405,18 @@ PRODUCT_PACKAGES += \
     libvidhance_ldc \
     libvidhance_stabilizer \
     libvidhance_super_stabilization \
+    libvmfilexfer \
     libvppcommon \
     libvpphcp \
     libvpphvx \
     libvpplibrary \
     libvpptestutils \
+    libwfdaac_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
     libwfddisplayconfig_vendor \
     libwfdhdcpcp \
-    libwfdhdcpservice_proprietary \
     libwfdmminterface_proprietary \
     libwfdmmservice_proprietary \
     libwfdmmsrc_proprietary \
@@ -1480,15 +1457,12 @@ PRODUCT_PACKAGES += \
     se_nq_extn_client \
     sensors.ssc \
     sensors.touch.detect \
-    libasphere \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
     vendor.display.color@1.3 \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
-    vendor.display.color@1.6 \
-    vendor.display.color@1.7 \
     vendor.display.postproc@1.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
@@ -1509,6 +1483,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V3-ndk \
     vendor.qti.gnss-V5-ndk \
     vendor.qti.gnss-service \
+    vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -1535,7 +1510,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dpmservice@1.0_vendor \
     vendor.qti.hardware.dpmservice@1.1_vendor \
-    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.dsp-V1-ndk \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
@@ -1585,7 +1560,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
@@ -1613,8 +1588,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
-    vendor.qti.qspmhal@1.0-impl \
-    vendor.qti.qspmhal@1.0 \
+    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal-impl \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
     vendor.xiaomi.hardware.campostproc@1.0-service-impl \
@@ -1804,12 +1779,16 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     qtiradio-saidl.xml \
+    vendor.qti.camera.postproc-impl.xml \
+    vendor.qti.camera.provider.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.perf.xml \
     vendor.qti.hardware.qconfig@1.0-service.xml \
     vendor.qti.hardware.radio.ims.xml \
     vendor.qti.hardware.vpp@2.0-service.xml \
+    vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
     ATFWD-daemon \
     SoterProvisioningTool \
@@ -1830,11 +1809,11 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     qconfigservice \
     qcrilNrd \
-    vendor.display.color@1.0-service \
-    vendor.qti.camera.provider@2.7-service_64 \
+    vendor.qti.camera.provider-service_64 \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor.qti.hardware.display.color-service \
     vendor.qti.hardware.perf-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
@@ -1860,7 +1839,6 @@ PRODUCT_PACKAGES += \
     msm_irqbalance \
     netmgrd \
     nv_mac \
-    pd-mapper \
     pm-proxy \
     pm-service \
     port-bridge \
@@ -1891,10 +1869,8 @@ PRODUCT_PACKAGES += \
     time_daemon \
     vendor.dpmd \
     vendor.qti.hardware.soter@1.0-provision \
-    vendor.qti.qspmhal@1.0-service \
+    vendor.qti.qspmhal-service \
     vppservice \
-    wfdhdcphalservice \
-    wfdvndservice \
     wifidisplayhalservice \
     xtra-daemon \
     dpmd \
